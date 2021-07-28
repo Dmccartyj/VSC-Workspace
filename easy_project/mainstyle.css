@@ -10,20 +10,24 @@
     max-height: fit-content;
     text-align: center;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    -webkit-animation: fadein linear 1s;
+    animation: fadein linear 1s;
+    opacity: 1;
 }
 .circle:hover{
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
-    opacity: 0;
+    
+    opacity: 1;
 }
-@-webkit-keyframes fadeinout {
-    50%{opacity: 0;}
+@-webkit-keyframes fadein {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
-@keyframes fadeinout {
-    50%{opacity: 3;}
+@keyframes fadein {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 body {
-    background-color: rgb(12, 11, 11);
+    background-color: rgb(24, 23, 23);
     font-family: monospace;
     color: rgb(124, 155, 155);
     font-size: larger;
