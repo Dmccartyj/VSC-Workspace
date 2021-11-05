@@ -71,11 +71,37 @@
 
         <!-- input elements allow for multiple ways users can input information. input elements are self-closing. -->
 
-        <input type="text">
+        <!-- input type text allows for users to enter information into a textbox. you can add the placeholder attribute to display text before the user replaces it. -->
+
+        <input type="text" placeholder="cat photo URL">
+
+         <!-- form elements with an action attribute allow users to submit data to a server with HTML. -->
+
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL">
+        </form>
+
+        <!-- button elements with the submit type allow users to send data from the form to the url from the forms action attribute. -->
+
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL">
+            <button type="submit">submit</button>
+        </form>
+
+        <!-- you can require that specific fields are required before a user can submit the data by adding the required attribute. -->
+
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">submit</button>
+        </form>        
+
+        <!-- radio buttons, a type of the input element, allow for users to select one answer out of multiple options. wrapping the input element within a label element will associate the radio button with the label surrounding it. -->
+
         
         <!-- You can nest multiple elements within each other for added dynamics and page usability. -->
 
         <p>View More  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
+
         
     </main>
 
