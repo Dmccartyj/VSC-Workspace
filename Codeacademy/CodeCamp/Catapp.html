@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cat App Practice</title>
 </head>
 <body>
 
@@ -16,22 +16,70 @@
 
     <main>
 
-        <!-- a elements allow you to link to outside and inside content via multiple means. For outside links, they require an href attribute and anchor text. for internal links, they require an id attribute.  -->
+        <!-- a elements allow you to link to outside and inside content via multiple means. For outside links, they require an href attribute and anchor text. for internal links, they require an id attribute.-->
+
+        <!-- id attributes are identifiers for special elements in a page. -->
+
+        <a href="#footer">Jump to Bottom</a>
         
         <a href="https://freecatphotoapp.com">Click here for more cats!</a>
 
         
-        <!-- img elements allow for images to be displayed. They must have two main components, the src attribute for the image url, and the alt attribute that screen readers will use. img elemrnts are self closing. -->
+        <!-- You can add a blank a element as a placeholder or when using javascript by setting the href taget to #. -->
+
+        <a href="#">Cats</a>
+
+        <!-- img elements allow for images to be displayed. They must have two main components, the src attribute for the image url, and the alt attribute that screen readers will use. img elements are self closing. -->
 
         <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cat">
+
+        <!-- You can nest img elements within a elements to use the image as a link. -->
+
+        <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="Some cute cats!"></a>
 
         <!-- p brackets are preferred elements for paragraphs -->
 
         <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
 
         <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+        <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched. Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff. Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+
+        <p>Meowwww loved it, hated it, loved it, hated it yet spill litter box, scratch at owner, destroy all furniture, especially couch or lay on arms while you're using the keyboard. Missing until dinner time toy mouse squeak roll over. With tail in the air lounge in doorway. Man running from cops stops to pet cats, goes to jail.</p>
+
+        <p>Intently stare at the same spot poop in the plant pot but kitten is playing with dead mouse. Get video posted to internet for chasing red dot leave fur on owners clothes meow to be let out and mesmerizing birds leave fur on owners clothes or favor packaging over toy so purr for no reason. Meow to be let out play time intently sniff hand run outside as soon as door open yet destroy couch.</p>
+
+        <p>Cats love these things:</p>
+
+        <!-- You can make unordered lists by using the ul element. -->
+
+        <ul>
+            <li>milk</li>
+            <li>cheese</li>
+            <li>screaming</li>
+        </ul>
+
+        <!-- You can make ordered lists by using the ol element. -->
+
+        <p>Cats hate these things:</p>
+
+        <ol>
+            <li>dogs</li>
+            <li>affection</li>
+            <li>me</li>
+        </ol>
+
+        <!-- input elements allow for multiple ways users can input information. input elements are self-closing. -->
+
+        <input type="text">
+        
+        <!-- You can nest multiple elements within each other for added dynamics and page usability. -->
+
+        <p>View More  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
         
     </main>
+
+  <footer id="footer">Copyright Cat Photo App</footer>    
 
 </body>
 </html>
