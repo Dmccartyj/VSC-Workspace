@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cattapp.css">
     <title>Cat App Practice</title>
 </head>
+
+
 <body>
 
     <!-- h elements are titles and headers, highlighting important information. They range from h1 to h6 -->
 
-    <h2>CatPhotoApp</h2>
+    <!-- adding the style attribute to any tag will allow you to alter the display of the page. -->
+
+    <h2 class=".red-text">CatPhotoApp</h2>
 
     <!-- the main tag element allows for search engines to find the main content for your page -->
 
@@ -31,7 +36,7 @@
 
         <!-- img elements allow for images to be displayed. They must have two main components, the src attribute for the image url, and the alt attribute that screen readers will use. img elements are self closing. -->
 
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cat">
+        <img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute cat">
 
         <!-- You can nest img elements within a elements to use the image as a link. -->
 
@@ -85,23 +90,58 @@
 
         <form action="https://www.freecatphotoapp.com/submit-cat-photo">
             <input type="text" placeholder="cat photo URL">
-            <button type="submit">submit</button>
+            <button type="submit">submit
+            </button>
         </form>
 
         <!-- you can require that specific fields are required before a user can submit the data by adding the required attribute. -->
 
         <form action="https://www.freecatphotoapp.com/submit-cat-photo">
             <input type="text" placeholder="cat photo URL" required>
-            <button type="submit">submit</button>
+            <button type="submit">submit
+            </button>
         </form>        
 
-        <!-- radio buttons, a type of the input element, allow for users to select one answer out of multiple options. wrapping the input element within a label element will associate the radio button with the label surrounding it. -->
+        <!-- radio buttons, a type of the input element, allow for users to select one answer out of multiple options. wrapping the input element within a label element will associate the radio button with the label surrounding it. By adding the for attribute to the label element, assistive tech will be able to create relationships bertween the label and the input. -->
 
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">submit</button>
+            <label for="indoor">
+                <input type="radio" name="indoor-outdoor" id="indoor">indoor
+            </label>
+            <label for="outdoor">
+                <input type="radio" name="indoor-outdoor" id="outdoor">outdoor
+            </label>
+        </form>    
         
+        <!-- the checkbox attribute of the input element allows users to selecent a multitude of answers rather than one or the other. like the radio button, nesting them within a label element associates the checkbox with its wrap. the value attribute attributes data back to the server when submitted.-->
+
+        <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+            <input type="text" placeholder="cat photo URL" required>
+            <button type="submit">submit</button>
+            <label for="indoor">
+                <input type="radio" value="indoor" name="indoor-outdoor" id="indoor">indoor
+            </label>
+            <label for="outdoor">
+                <input type="radio" value="outdoor" name="indoor-outdoor" id="outdoor">outdoor
+            </label>
+            <label for="loving">
+                <input type="checkbox" value="loving" name="personality" id="loving">loving
+            </label>
+            <label for="neutral">
+                <input type="checkbox" value="neutral" name="personality" id="neutral">neutral
+            </label>
+            <label for="hate">
+                <input type="checkbox" value="hate" name="personality" id="hate" checked>hate
+            </label>
+        </form>    
+
         <!-- You can nest multiple elements within each other for added dynamics and page usability. -->
 
         <p>View More  <a href="https://www.freecatphotoapp.com" target="_blank">cat photos</a></p>
 
+        <!-- div elements are general containers for other elements. they allow for different codes to be applied to their children. -->
         
     </main>
 
